@@ -844,18 +844,18 @@ const generateRemark = (index, port) => {
     switch (index) {
         case 0:
         case 1:
-            remark = `Amin/Domain_${index + 1} : ${port}`;
+            remark = `Amin/Domain/${index + 1}:${port}`;
             break;
         case 2:
         case 3:
-            remark = `Amin/IPv4_${index - 1} : ${port}`;
+            remark = `Amin/IPv4/${index - 1}:${port}`;
             break;
         case 4:
         case 5:
-            remark = `Amin/IPv6_${index - 3} : ${port}`;
+            remark = `Amin/IPv6/${index - 3}:${port}`;
             break;
         default:
-            remark = `Amin/Clean IP_${index - 5} : ${port}`;
+            remark = `Amin/CleanIP/${index - 5}:${port}`;
             break;
     }
 
